@@ -5,19 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nnaemeka Ngige — Software Engineering Student &amp; Web Developer</title>
 
-  <!-- Google Fonts: a playful variable display face (Bricolage Grotesque),
-       a warm, friendly grotesque for body text (Karla), and a monospace
-       for the small "dev" touches (JetBrains Mono) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- CSS lives in its own file, linked here -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ============ HEADER: wordmark + in-page navigation ============ -->
   <header class="site-header">
     <div class="site-header__inner">
       <a href="#top" class="logo">nnaemeka<span class="accent-dot">.</span></a>
@@ -30,36 +25,41 @@
   </header>
 
   <main>
-    <!-- ============ HERO: the main introduction ============ -->
     <section class="hero" id="top">
-      <span class="hero-mark" aria-hidden="true"></span>
-      <p class="eyebrow">Software Engineering Student · Lagos, Nigeria</p>
-      <h1>Hi, I'm <em>Nnaemeka</em>.</h1>
-      <p class="hero-subtext">
-        I build clean, considered interfaces for the web.
-      </p>
-      <p class="status-line">
-        &gt; building without frameworks, on purpose<span class="cursor" aria-hidden="true"></span>
-      </p>
-      <div class="hero-actions">
-        <a href="#work" class="btn btn-primary">See what I build</a>
-        <a href="mailto:thedonngige@gmail.com" class="btn btn-secondary">Say hello</a>
+      <div class="hero-content">
+        <span class="hero-mark" aria-hidden="true"></span>
+        <p class="eyebrow">Software Engineering Student · Lagos, Nigeria</p>
+        <h1>Hi, I'm <em>Nnaemeka</em>.</h1>
+        <p class="hero-subtext">
+          I build clean, considered interfaces for the web.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">See what I build</a>
+          <a href="mailto:thedonngige@gmail.com" class="btn btn-secondary">Say hello</a>
+        </div>
+      </div>
+
+      <div class="hero-panel" aria-hidden="true">
+        <div class="hero-panel__bar">
+          <span class="dot dot--pink"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="hero-panel__title">status.sh</span>
+        </div>
+        <div class="hero-panel__body">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="hero-panel__out">nnaemeka</p>
+          <p><span class="prompt">$</span> status</p>
+          <p class="hero-panel__out">
+            testing to see the framework is working...<span class="cursor"></span>
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- ============ ABOUT + WORK: side by side on wider screens ============ -->
     <div class="about-work">
-      <section class="about" id="about">
-        <h2>About</h2>
-        <p>
-          I'm a Software Engineering student who spends most of my free time building
-          small web projects from scratch galleries, dashboards, login systems,
-           mostly to understand how things work under the hood before reaching for a shortcut.
-        </p>
-      </section>
-
       <section class="work" id="work">
-        <h2>What I build with</h2>
+        <p class="panel-label">Toolkit</p>
         <ul class="tag-list">
           <li>HTML5</li>
           <li>CSS3 — Grid &amp; Flexbox</li>
@@ -68,16 +68,22 @@
           <li>Git &amp; GitHub</li>
         </ul>
       </section>
+
+      <section class="about" id="about">
+        <h2>About</h2>
+        <p>
+          Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatibus temporibus quia quae, eum, quod voluptates natus, expedita ipsa accusantium quibusdam. Quisquam, dolores. Quam, quod. Dolorum, voluptate. Quisquam, dolores. Quam, quod. Dolorum, voluptate.
+        </p>
+      </section>
     </div>
   </main>
 
-  <!-- ============ FOOTER: contact + credits ============ -->
   <footer class="site-footer" id="contact">
-    <p>&copy; 2026 Nnaemeka Ngige — built with HTML &amp; CSS</p>
     <div class="footer-links">
       <a href="https://github.com/don4lddotcom" target="_blank" rel="noopener">GitHub</a>
       <a href="mailto:thedonngige@gmail.com">Email</a>
     </div>
+    <p>&copy; 2026 Nnaemeka Ngige — built with HTML &amp; CSS, deployed with GitHub Pages.</p>
   </footer>
 
 </body>
